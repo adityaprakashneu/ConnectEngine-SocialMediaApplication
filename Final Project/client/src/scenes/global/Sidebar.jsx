@@ -33,3 +33,44 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
     </MenuItem>
   );
 };
+
+const Sidebar = () => {
+    const theme = useTheme();
+    const colors = tokens(theme.palette.mode);
+    const [isCollapsed, setIsCollapsed] = useState(false);
+  
+    const { _id, picturePath } = useSelector((state) => state.user);
+    const token = useSelector((state) => state.token);
+  
+    const [selected, setSelected] = useState("Dashboard");
+    const [user, setUser] = useState(null);
+  
+    const getUser = async () => {
+      const response = await fetch(`http://localhost:3001/users/${_id}`, {
+        method: "GET",
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const data = await response.json();
+      console.log(data)
+      setUser(data);
+    };
+  
+    useEffect(() => {
+      getUser();
+    }, []);
+  
+    if (!user) {
+      return null;
+    }
+  
+    const {
+      firstName,
+      lastName,
+      location,
+      occupation,
+      viewedProfile,
+      impressions,
+      friends,
+    } = user;
+  
+    console.log(picturePath)
