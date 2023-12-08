@@ -57,3 +57,109 @@ const Team = () => {
       console.error("Error fetching users:", error.message);
     }
   };
+
+  const handleDeleteClick = () => {
+    const selectedRows = document.querySelectorAll(
+      '.MuiDataGrid-row[aria-selected="true"]'
+    );
+
+    selectedRows.forEach((row) => {
+      const dataId = row.getAttribute("data-id");
+      console.log(dataId);
+      deleteUser(dataId)
+    });
+  };
+
+  useEffect(() => {
+    getAllUser();
+  }, []);
+
+  useEffect(() => {
+    console.log(user);
+  }, [user]);
+
+  const columns = [
+    { field: "_id", headerName: "ID", flex: 1.25 },
+    {
+      field: "name",
+      headerName: "Name",
+      flex: 1,
+      cellClassName: "name-column--cell",
+      renderCell: ({ row }) => (
+        <Typography>{`${row.firstName} ${row.lastName}`}</Typography>
+      ),
+    },
+    {
+      field: "occupation",
+      headerName: "Occupation",
+      type: "number",
+      headerAlign: "left",
+      align: "left",
+      flex: 0.75,
+    },
+    {
+      field: "location",
+      headerName: "Location",
+      flex: 0.75,
+    },
+    {
+      field: "email",
+      headerName: "Email",
+      flex: 1.4,
+    },
+    {
+      field: "accessLevel",
+      headerName: "Access Level",
+      flex: 1,
+      renderCell: ({ row: { email } }) => {
+        return (
+          <Box
+            width="60%"
+            m="0 auto"
+            p="5px"
+            display="flex"
+            justifyContent="center"
+            backgroundColor={
+              email.endsWith("admin@socialnetwork.com")
+                ? colors.greenAccent[600]
+                : email.endsWith("manager@socialnetwork.com")
+                ? colors.greenAccent[700]
+                : colors.greenAccent[700]
+            }
+            borderRadius="4px"
+          >
+            {email.endsWith("admin@socialnetwork.com") && (
+              <>
+                <AdminPanelSettingsOutlinedIcon />
+                <Typography color={colors.grey[100]} sx={{ ml: "5px" }}>
+                  Admin
+                </Typography>
+              </>
+            )}
+            {email.endsWith("manager@socialnetwork.com") && (
+              <>
+                <SecurityOutlinedIcon />
+                <Typography color={colors.grey[100]} sx={{ ml: "5px" }}>
+                  Manager
+                </Typography>
+              </>
+            )}
+            {!email.endsWith("admin@socialnetwork.com") &&
+              !email.endsWith("manager@socialnetwork.com") && (
+                <>
+                  <LockOpenOutlinedIcon />
+                  <Typography color={colors.grey[100]} sx={{ ml: "5px" }}>
+                    User
+                  </Typography>
+                </>
+              )}
+          </Box>
+        );
+      },
+    },
+    {
+      field: "delete",
+      headerName: "Delete",
+      renderCell: () => <DeleteIcon onClick={handleDeleteClick()} />,
+    },
+  ];
