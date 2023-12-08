@@ -24,3 +24,36 @@ const Team = () => {
   const selectedRows = document.querySelectorAll(
     '.MuiDataGrid-row[aria-selected="true"]'
   );
+
+  selectedRows.forEach((row) => {
+    const dataId = row.getAttribute("data-id");
+    console.log(dataId);
+  });
+
+  console.log(token);
+
+  const getAllUser = async () => {
+    try {
+      const response = await fetch(`http://localhost:3001/users/getAll`, {
+        method: "GET",
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const data = await response.json();
+      setUser(data);
+    } catch (error) {
+      console.error("Error fetching users:", error.message);
+    }
+  };
+
+  const deleteUser = async (dataId) => {
+    try {
+      const response = await fetch(`http://localhost:3001/users/delete/${dataId}`, {
+        method: "DELETE",
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const data = await response.json();
+      setUser(data);
+    } catch (error) {
+      console.error("Error fetching users:", error.message);
+    }
+  };
