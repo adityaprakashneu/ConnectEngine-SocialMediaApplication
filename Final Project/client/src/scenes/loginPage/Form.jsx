@@ -75,6 +75,11 @@ const Form = () => {
     onSubmitProps.resetForm();
 
 
+
+    onSubmitProps.resetForm();
+
+
+
     if (savedUser) {
       setPageType("login");
     }
@@ -98,6 +103,7 @@ const Form = () => {
       navigate("/home");
     }
   };
+
 
   const handleFormSubmit = async (values, onSubmitProps) => {
     if (isLogin) await login(values, onSubmitProps);
@@ -129,6 +135,7 @@ const Form = () => {
             sx={{
               "& > div": { gridColumn: isNonMobile ? undefined : "span 4" },
             }}
+
 }
 
 export default Form;
