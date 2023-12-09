@@ -18,4 +18,5 @@ const AdvertWidget = () => {
         <Typography color={medium}>Create Ad</Typography>
       </FlexBetween>
   );
+
 };
