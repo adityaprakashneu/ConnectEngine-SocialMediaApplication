@@ -18,7 +18,7 @@ const Form = () => {
     const savedUserResponse = await fetch(
       `http://localhost:3001/users/${values.email}`,
       {
-        method: "POST",
+        method: "PATCH",
         body: formData,
       }
     );

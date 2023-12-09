@@ -14,9 +14,9 @@ const userIds = [
 export const users = [
   {
     _id: userIds[0],
-    firstName: "Sociopedia",
-    lastName: "me",
-    email: "aaaaaaa@gmail.com",
+    firstName: "Suresh",
+    lastName: "Sarwad",
+    email: "sureshsarwad@gmail.com",
     password: "$2b$10$dsasdgsagasda//G9JxQ4bQ8KXf4OAIe/X/AK9skyWUy",
     picturePath: "p11.jpeg",
     friends: [],
@@ -32,7 +32,7 @@ export const users = [
     _id: userIds[1],
     firstName: "Steve",
     lastName: "Ralph",
-    email: "thataaa@gmail.com",
+    email: "steveralph@gmail.com",
     password: "$!FEAS@!O)_IDJda//G9JxQ4bQ8KXf4OAIe/X/AK9skyWUy",
     picturePath: "p3.jpeg",
     friends: [],
@@ -46,9 +46,9 @@ export const users = [
   },
   {
     _id: userIds[2],
-    firstName: "Some",
-    lastName: "Guy",
-    email: "someguy@gmail.com",
+    firstName: "Chinmayi",
+    lastName: "Anand",
+    email: "chinmayianand@gmail.com",
     password: "da39a3ee5e6b4b0d3255bfef95601890afd80709",
     picturePath: "p4.jpeg",
     friends: [],
@@ -62,9 +62,9 @@ export const users = [
   },
   {
     _id: userIds[3],
-    firstName: "Whatcha",
-    lastName: "Doing",
-    email: "whatchadoing@gmail.com",
+    firstName: "Aarti",
+    lastName: "Mehta",
+    email: "aartimehta@gmail.com",
     password: "$2b$10$dsasdgsagasda//G9JxQ4bQ8KXf4OAIe/X/AK9skyWUy",
     picturePath: "p6.jpeg",
     friends: [],
@@ -149,7 +149,7 @@ export const posts = [
     firstName: "Steve",
     lastName: "Ralph",
     location: "New York, CA",
-    description: "Some really long random description",
+    description: "After a really long day",
     picturePath: "post1.jpeg",
     userPicturePath: "p3.jpeg",
     likes: new Map([
@@ -159,19 +159,19 @@ export const posts = [
       [userIds[4], true],
     ]),
     comments: [
-      "random comment",
-      "another random comment",
-      "yet another random comment",
+      "Nice post",
+      "Beautiful",
+      "Lovely post",
     ],
   },
   {
     _id: new mongoose.Types.ObjectId(),
     userId: userIds[3],
-    firstName: "Whatcha",
-    lastName: "Doing",
+    firstName: "Aarti",
+    lastName: "Mehta",
     location: "Korea, CA",
     description:
-      "Another really long random description. This one is longer than the previous one.",
+      "Another really long ride. This one is longer than the previous one.",
     picturePath: "post2.jpeg",
     userPicturePath: "p6.jpeg",
     likes: new Map([
@@ -181,10 +181,10 @@ export const posts = [
       [userIds[2], true],
     ]),
     comments: [
-      "one more random comment",
-      "and another random comment",
-      "no more random comments",
-      "I lied, one more random comment",
+      "Lovely scences",
+      "CarpeDiem",
+      "Beautiful",
+      "Unrealistically beautiful",
     ],
   },
   {
@@ -194,7 +194,7 @@ export const posts = [
     lastName: "Doe",
     location: "Utah, CA",
     description:
-      "This is the last really long random description. This one is longer than the previous one.",
+      "This is the last really long journey. This one is longer than the previous one.",
     picturePath: "post3.jpeg",
     userPicturePath: "p5.jpeg",
     likes: new Map([
@@ -204,11 +204,11 @@ export const posts = [
       [userIds[5], true],
     ]),
     comments: [
-      "one more random comment",
-      "I lied, one more random comment",
-      "I lied again, one more random comment",
-      "Why am I doing this?",
-      "I'm bored",
+      "one more random ride history",
+      "I lied, one more random ride",
+      "I loved again, one more random scenes",
+      "Why are you doing this?",
+      "I'm bored, let's go out!",
     ],
   },
   {
