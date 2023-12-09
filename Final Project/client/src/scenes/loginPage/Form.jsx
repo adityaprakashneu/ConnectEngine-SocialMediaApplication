@@ -71,7 +71,9 @@ const Form = () => {
       }
     );
     const savedUser = await savedUserResponse.json();
-    onSubmitProps.resetForm();    
+
+    onSubmitProps.resetForm();
+
 
     if (savedUser) {
       setPageType("login");
@@ -102,6 +104,7 @@ const Form = () => {
     if (isRegister) await register(values, onSubmitProps);
   };
 
+
   return (
     <Formik
       onSubmit={handleFormSubmit}
@@ -126,4 +129,6 @@ const Form = () => {
             sx={{
               "& > div": { gridColumn: isNonMobile ? undefined : "span 4" },
             }}
+}
+
 export default Form;
