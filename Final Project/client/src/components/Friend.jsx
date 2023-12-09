@@ -46,7 +46,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
             navigate(0);
           }}
         >
-                    <Typography
+          <Typography
             color={main}
             variant="h5"
             fontWeight="500"
