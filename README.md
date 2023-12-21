@@ -1,6 +1,4 @@
-# INFO6150_WebD_FinalProject_SocialMediaApp
-
-ConnectEngine
+# ConnectEngine - A Social Media Application
 
 
 Overview:
