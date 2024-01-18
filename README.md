@@ -47,3 +47,9 @@ Client Setup:
 2. Launch the client application by running: npm start
 
 Follow these steps to get the ConnectEngine platform up and running on your local machine.
+
+Below are screenshots of different pages of the website:
+
+![Login Page](https://github.com/adityaprakashneu/ConnectEngine-SocialMediaApplication/assets/114718070/37f2161e-399b-4699-b3de-3e6be85db2a7)
+
+
