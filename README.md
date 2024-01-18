@@ -52,4 +52,22 @@ Below are screenshots of different pages of the website:
 
 ![Login Page](https://github.com/adityaprakashneu/ConnectEngine-SocialMediaApplication/assets/114718070/37f2161e-399b-4699-b3de-3e6be85db2a7)
 
+![SignUp Page](https://github.com/adityaprakashneu/ConnectEngine-SocialMediaApplication/assets/114718070/9c195b3d-abb9-4710-a878-b69ba242ff6f)
 
+![Homepage](https://github.com/adityaprakashneu/ConnectEngine-SocialMediaApplication/assets/114718070/7852af1e-61bf-4265-9465-a52f07db4ea0)
+
+![Profile Page](https://github.com/adityaprakashneu/ConnectEngine-SocialMediaApplication/assets/114718070/b7aafd6e-655e-4a12-8080-e91875e0d4c7)
+
+![Admin Home](https://github.com/adityaprakashneu/ConnectEngine-SocialMediaApplication/assets/114718070/b8875ecf-44a8-469d-b8e5-eef27e0a1de5)
+
+![Admin Team](https://github.com/adityaprakashneu/ConnectEngine-SocialMediaApplication/assets/114718070/905a8640-527a-44bf-a308-d57c5f66b7da)
+
+![Admin Contact](https://github.com/adityaprakashneu/ConnectEngine-SocialMediaApplication/assets/114718070/c06ae349-d709-457e-847c-8ad67659fe09)
+
+![Admin Invoices](https://github.com/adityaprakashneu/ConnectEngine-SocialMediaApplication/assets/114718070/5fac23c6-9eec-4667-a257-074e372b9a44)
+
+![Admin Update User](https://github.com/adityaprakashneu/ConnectEngine-SocialMediaApplication/assets/114718070/dfb0d7f6-77ef-442a-a111-1a8f9396a30b)
+
+![Admin FAQs](https://github.com/adityaprakashneu/ConnectEngine-SocialMediaApplication/assets/114718070/945c8e23-99e7-4c41-86fa-673c84e2110a)
+
+![Admin Geography](https://github.com/adityaprakashneu/ConnectEngine-SocialMediaApplication/assets/114718070/cbafbc8d-38de-4fa3-a7e4-2a4a3020927d)
